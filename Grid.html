@@ -1,0 +1,111 @@
+<!-- Introduction to Grid
+Difference between Grid and Flex
+Advantage of Grid
+Disadvantage of Grid -->
+
+<!-- Grid Container Properties -->
+<!-- Grid item Properties -->
+
+
+<!-- Properties
+1.Layouting
+2.Spacing
+3.Alignment -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 100px 200px 300px; */
+            /* grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 400px 200px; */
+
+            /* height: 100vh;
+            grid-template-areas: 
+            "header header header"
+            "sidebar main main"
+            "footer footer footer"; */
+
+            /* grid-template:repeat(2,1fr)/repeat(3,1fr) ;
+            /* grid-row-gap: 1px; */
+            /* grid-gap: 50px; */ 
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px;
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-between; */
+
+
+            border: 1px solid red;
+            height: 500px;
+            /* align-content: center; */
+            /* align-content: start; */
+            /* align-content: space-around; */
+
+            /* justify-items: center; */
+            /* justify-items: end; */
+
+            /* align-items: center; */
+
+            /* grid-auto-rows: 50px; */
+
+
+
+            grid-auto-flow: column;
+        }
+
+        .item{
+            border: 2px solid black;
+        }
+
+        /* .header {
+            grid-area: header;
+            background: red;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: green;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: yellow;
+        }
+
+        .maincontent {
+            grid-area: main;
+            background: blue;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <!-- <div class="container">
+        <div class="header">Header</div>
+        <div class="footer">Footer</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="maincontent">Main Content</div>
+    </div> -->
+</body>
+
+</html>
